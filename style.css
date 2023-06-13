@@ -40,13 +40,17 @@ font-family:  'Arial Narrow Bold', sans-serif;
     height: 400px;
     width: 250px;
     border: 5px solid var(--clr-shadow);
+    
+    transition: 150ms;
    /* box-shadow: 0px 0px 25px var(--clr-shadow);
     */
     
  }
 
  .magic {
+    
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -55,11 +59,38 @@ font-family:  'Arial Narrow Bold', sans-serif;
     height: 95%;
     width: 90%;
     color: var(--clr-shadow);
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     font-size: 1em;
     font-style: oblique;
     font-weight: 900;
+}
+
+
+
+    
+.card:hover {
+    transition: 150ms;
+    box-shadow: 0px 0px 100px var(--clr-light) , 0px 0px 25px var(--clr-text);
+} 
+
+/*span {
+    visibility: hidden;
+}*/
+
+.magic:hover/*, span*/ {
+    
+    color: var(--clr-text);
+    cursor: pointer;
+    border: 3px solid var(--clr-text);
+    font-size: 1.1em;
+    transition: 200ms;
     
     
- }
+    
+}
+
+
+
+
+
     
